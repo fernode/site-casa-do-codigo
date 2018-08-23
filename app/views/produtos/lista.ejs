@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+        </thead>
+        <tbody>
+            <% for (livro of livros){%>
+                <tr>
+                    <td>
+                        <%= livro.id %>
+                    </td>
+                    <td>
+                        <%= livro.titulo %>
+                    </td>
+                    <td>
+                        <%= livro.descricao%>
+                    </td>
+                    <td>
+                        <%= livro.preco%>
+                    </td>
+                </tr>
+                <% } %>
+        </tbody>
+    </table>
+</body>
+
+</html>
